@@ -19,17 +19,26 @@ The key findings are
 The structure of this repository is as follows.
 
 ```
+├── LICENSE
+├── README.md
+├── notebooks
+│   ├── experiments_XLM_R.ipynb
+│   └── experiments_multilingual_BERT.ipynb
+│   └── data: explorative analysis.ipynb
+└── sample.R
 ```
 
-All code was executed using compute units of [Google Colab](https://colab.research.google.com/) so `` contains the relevant versions of all modules and packages that were available at the time of the research.
+All code was executed using the compute units of [Google Colab](https://colab.research.google.com/). In order to replicate the expriments, one needs all the relevant versions of all modules and packages that were available at the time of the research (June, 2026).
 
 The directory `notebooks` contains three `.ipynb` notebooks with the code for the experiments:
 
-1) `` contains the code for the exploration of datasets used in the research
-2) `` contains the code for the fine-tuning and probing `multilingual BERT`
-3) `` contains the code for the fine-tuning and probing `XLM-RoBERTa`
+1) `notebooks/data: explorative analysis.ipynb` contains the code for the exploration of datasets used in the research
+2) `notebooks/experiments_multilingual_BERT.ipynb` contains the code for the fine-tuning and probing `multilingual BERT`
+3) `notebooks/experiments_XLM_R.ipynb` contains the code for the fine-tuning and probing `XLM-RoBERTa`
 
 All the experiments can be reproduced by simply running the code from the respective `.ipynb` notebook.
+
+The sample is visualized by the script in `sample.R`.
 
 ## Data
 
