@@ -24,7 +24,7 @@ The structure of this repository is as follows.
 ├── notebooks
 │   ├── experiments_XLM_R.ipynb
 │   └── experiments_multilingual_BERT.ipynb
-│   └── data: explorative analysis.ipynb
+│   └── data_explorative_analysis.ipynb
 └── sample.R
 ```
 
