@@ -10,9 +10,7 @@ This repository contains the code for the experiments conducted within the gradu
 
 In this research, I aimed to investigate what a subjecthood can be inside a multilingual LLM as it is a complex linguistic concept that unites the notions of morphology, syntax, semantics and discourse.
 
-The main methodology are the structural probing and the analysis of embeddings.
-
-The key findings are
+The main methodology are the structural probing and the analysis of embeddings of two models: mBERT and XLM-RoBERTa. The results are overviewed in the end of this README.
 
 ## Structure & Usage
 
@@ -69,6 +67,18 @@ Within the study, I have fine-tuned two multilingual models: `multilingual BERT`
 | Russian   |  [link](https://huggingface.co/fromdeath2morning/mbert-argumentClassification-russian)            | [link](https://huggingface.co/fromdeath2morning/xlm-r-argumentClassification-russian)          |
 | Turkish   |  [link](https://huggingface.co/fromdeath2morning/mbert-argumentClassification-turkish)             | [link](https://huggingface.co/fromdeath2morning/xlm-r-argumentClassification-turkish)          |
 | Welsh     |  [link](https://huggingface.co/fromdeath2morning/mbert-argumentClassification-welsh)             | [link](https://huggingface.co/fromdeath2morning/xlm-r-argumentClassification-welsh)          |
+
+## Results
+
+The results of the paper are as follows.
+1. The distribution of the `S`-, `A`- and `P`-arguments is unbaalanced throughout the UD treebanks.
+2. Despite the language, the best classified argument is `S`.
+3. Both models achieve high results but XLM-RoBERTa is better than mBERT (in probing and crosslingually).
+4. The highest classification metrics are accumulated on the middle-last layers of both models.
+5. Despite the high metrics, three languages stand out in the sample within crosslingual evaluation – English, Russian and German.
+6. The dominant word order or morphosyntactic alignment alone are not the key factors that affect the classification.
+7. Both models do not lock upon the dominant word order of the respective language that they were fine-tuned on.
+8. The visualization of the embeddings shows a clear bias towards the accusative alignment.
 
 ## License
 
